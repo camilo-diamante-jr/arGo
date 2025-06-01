@@ -1,20 +1,13 @@
 <?php
 
-define('FILE_EXTENSION', '.php');
-include 'includes/config/path.php';
+include_once 'includes/config/database.php';
+include_once 'includes/config/path.php';
 
 
+define("FILE_EXTENSION", ".php");
 
-/**
- * Load template files from the specified paths.
- *
- * @param array $templatePaths An array of template paths to include.
- */
-
-
-function loadTemplate($templatePaths)
+function loadTemplates($templatePaths)
 {
-
 
     foreach ($templatePaths as $templatePath) :
         include $templatePath . FILE_EXTENSION;
@@ -22,10 +15,10 @@ function loadTemplate($templatePaths)
 }
 
 
-$templatePath = [
-    LAYOUTS_PATH . '/header',
-    TEMPLATES_PATH . '/template',
-    LAYOUTS_PATH . '/footer'
+$templatePaths = [
+    LAYOUTS_PATH . 'header',
+    TEMPLATES_PATH . 'template',
+    LAYOUTS_PATH . 'footer',
 ];
 
-loadTemplate($templatePath);
+loadTemplates($templatePaths);
