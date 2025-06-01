@@ -14,5 +14,3 @@
 <body>
 
     <div class="app-wrapper">
-
-        <?php include 'includes/components/navbar.php'; ?>

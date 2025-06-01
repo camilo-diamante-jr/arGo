@@ -1,5 +1,3 @@
-<!-- Include Font Awesome (add in your <head> if not already included) -->
-
 <nav class="navbar is-dark has-text-light" role="navigation" aria-label="main navigation">
     <div class="container">
         <div class="navbar-brand">
@@ -62,10 +60,11 @@
                             <span class="icon"><i class="fas fa-cog"></i></span>
                             <span>Settings</span>
                         </a>
-                        <a class="navbar-item">
+                        <a href="modules/authentications/logout.php" class="navbar-item">
                             <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
                             <span>Logout</span>
                         </a>
+
                     </div>
                 </div>
             </div>

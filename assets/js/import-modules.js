@@ -1,9 +1,20 @@
-import { bulmaNavbar } from "./components/bulma-navbar.js";
-import { argoDashboard } from "./modules/dashboard/argo-dashboard.js";
-import { accomplishmentRegistry } from "./modules/registries/accomplishment/accomplishment-registry.js";
+$(document).ready(async function () {
+  try {
+    const loginModule = await import("./modules/auth/login.js");
+    const navbarModule = await import("./components/bulma-navbar.js");
+    const dashboardModule = await import(
+      "./modules/dashboard/argo-dashboard.js"
+    );
+    const registryModule = await import(
+      "./modules/registries/accomplishment/accomplishment-registry.js"
+    );
 
-$(document).ready(function () {
-  bulmaNavbar();
-  argoDashboard();
-  accomplishmentRegistry();
+    loginModule.loginAuthentication();
+    navbarModule.bulmaNavbar();
+    dashboardModule.argoDashboard();
+    registryModule.accomplishmentRegistry();
+  } catch (err) {
+    console.error("Error loading modules:", err);
+    alert("One or more required modules could not be found or loaded.");
+  }
 });
