@@ -14,33 +14,33 @@
 
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-end">
-                <a class="navbar-item">
+                <a href="/dashboard" class="navbar-item link">
                     <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
                     <span>Dashboard</span>
                 </a>
 
-                <a class="navbar-item">
+                <a href="/registry/accomplishment" class="navbar-item link">
                     <span class="icon"><i class="fas fa-check-circle"></i></span>
                     <span>Accomplishments</span>
                 </a>
 
-                <a class="navbar-item">
+                <a class="navbar-item link">
                     <span class="icon"><i class="fas fa-users"></i></span>
                     <span>Users</span>
                 </a>
 
                 <!-- Reports Dropdown -->
                 <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">
+                    <a class="navbar-link link">
                         <span class="icon"><i class="fas fa-file-alt"></i></span>
                         <span>Reports</span>
                     </a>
 
                     <div class="navbar-dropdown">
-                        <a class="navbar-item">
+                        <a class="navbar-item link">
                             Accomplishment Report
                         </a>
-                        <a class="navbar-item">
+                        <a class="navbar-item link">
                             User Report
                         </a>
                     </div>
