@@ -1,7 +1,31 @@
 <section class="section is-fullheight">
     <div class="container">
         <div class="card">
+            <nav class="tabs is-centered pt-3 is-boxed">
+                <ul>
+                    <li class="is-active">
+                        <a>
+                            <!-- <span class="icon is-small"><i class="fas fa-bars-progress" aria-hidden="true"></i></span> -->
+                            <span>Browse</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <!-- <span class="icon is-small"><i class="fa fa-plus" aria-hidden="true"></i></span> -->
+                            <span>Insert</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <!-- <span class="icon is-small"><i class="fa fa-file-pdf" aria-hidden="true"></i></span> -->
+                            <span>Export</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
             <div class="card-content">
+
                 <div class="table-container">
                     <table id="accomplishmentRegistryTable" class="table is-striped is-narrow is-bordered is-hoverable is-fullwidth">
                         <thead class="has-text-centered">
